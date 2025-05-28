@@ -71,8 +71,11 @@ uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 - Generated YOLO format labels (.txt files)
 
 ![Labeling image using labelImg - 1](https://github.com/user-attachments/assets/609fd6ee-fcc7-4c6a-973b-6c539e8515c5)
+
 ![Labeling image using labelImg - 2](https://github.com/user-attachments/assets/3666c451-8bc4-4d57-9ffa-48611deca6d3)
+
 ![Labeling image using labelImg - 3](https://github.com/user-attachments/assets/2f5f23fb-1086-412f-82a1-f1ff5e24dd75)
+
 ![Labeling image using labelImg - 4](https://github.com/user-attachments/assets/8bccf20e-d5dc-4d1b-923b-7f603d64f5d2)
 
 ### Step 2: Model Training
@@ -86,8 +89,11 @@ yolo task=detect mode=train epochs=100 data=data_custom.yaml model=yolov8m.pt im
 - Classes: 2 (door, window)
 
 ![Training_img 1](https://github.com/user-attachments/assets/91d56bd7-ad51-412a-ac1d-f6519f4fb192)
+
 ![Training_img 2](https://github.com/user-attachments/assets/2c7e39c2-62ff-42ed-8f36-8246a1ef6754)
+
 ![Training_img 3](https://github.com/user-attachments/assets/334426cf-1189-45cc-a8a0-1fa5e17b7054)
+
 ![Training_img 4](https://github.com/user-attachments/assets/2a6b04e2-e7c3-476f-9490-f60725312eb4)
 
 ### Step 3: Model Testing
@@ -95,6 +101,7 @@ yolo task=detect mode=train epochs=100 data=data_custom.yaml model=yolov8m.pt im
 yolo task=detect mode=predict model=best.pt show=true conf=0.5 source=12.png line_thickness=1
 ```
 ![Testing_img 1](https://github.com/user-attachments/assets/3be7fed0-f8a0-4844-b203-d649fe93144a)
+
 ![Testing_img 2](https://github.com/user-attachments/assets/d1069eac-8e16-47c4-88a1-0d9707b81b75)
 
 ## 🔌 API Usage
@@ -139,7 +146,9 @@ Returns annotated PNG image with:
 
 
 ![12](https://github.com/user-attachments/assets/d17d8988-72fc-4b8d-a254-d16ece3359da)
+
 ![17](https://github.com/user-attachments/assets/f63c5263-5cdf-4f52-b0c0-4f86bc07ffff)
+
 ![22](https://github.com/user-attachments/assets/362db0f0-cac8-451e-a54f-462e6bbb2c88)
 
 ### Usage Examples
@@ -286,35 +295,46 @@ door-window-detection/
 - Convergence after 100 epochs
 
 #### Confusion Matrix
+
 ![confusion_matrix](https://github.com/user-attachments/assets/f75fa379-66d9-4552-b68b-357c96970ffc)
 
 #### Confusion Matrix Normalized
+
 ![confusion_matrix_normalized](https://github.com/user-attachments/assets/3fe6b1d6-7aa9-4a68-907f-7f3df99846dd)
 
 #### Confusion F1 Curve
+
 ![F1_curve](https://github.com/user-attachments/assets/ec55acfc-88ca-4358-b901-81055a3dc85d)
 
 #### labels
+
 ![labels](https://github.com/user-attachments/assets/5f291a1d-5c4f-427b-ab90-f95cf674d18b)
 
 #### P_curve
+
 ![P_curve](https://github.com/user-attachments/assets/a659451c-8804-4985-b99a-9747df198183)
 
 #### PR_Curve
+
 ![PR_curve](https://github.com/user-attachments/assets/59fcdca6-5e04-43b3-bd3a-0499fef27279)
 
 #### R Curve
+
 ![R_curve](https://github.com/user-attachments/assets/1c57de54-c492-465f-a43f-536f87a91add)
 
 #### Results
+
 ![results](https://github.com/user-attachments/assets/c2c2b540-0ea9-4c7d-8208-ade4f0e7c7de)
 
 ### API Responses
+
 - JSON detection data examples
+
 ![JSON Response](https://github.com/user-attachments/assets/68c5f208-0f5a-4d4a-8f1a-1203d8a2f72f)
 
   
 - Annotated image outputs
+
 ![Image Response](https://github.com/user-attachments/assets/1edc83e8-1f4e-4c62-b8fc-78b3c0091e8c)
 
 - Performance benchmarks
@@ -323,6 +343,7 @@ door-window-detection/
 - Swagger UI at `/docs`
 - Parameter descriptions
 - Live API testing interface
+
 ![API Interface](https://github.com/user-attachments/assets/0ea0ada7-b072-4586-b26b-e6e7f2d9b333)
 
 
