@@ -70,16 +70,15 @@ uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 - Created bounding boxes for doors and windows only
 - Generated YOLO format labels (.txt files)
 
-
-### Step 2: Model Training
-```bash
-yolo task=detect mode=train epochs=100 data=data_custom.yaml model=yolov8m.pt imgsz=640
-```
 ![Labeling image using labelImg - 1](https://github.com/user-attachments/assets/609fd6ee-fcc7-4c6a-973b-6c539e8515c5)
 ![Labeling image using labelImg - 2](https://github.com/user-attachments/assets/3666c451-8bc4-4d57-9ffa-48611deca6d3)
 ![Labeling image using labelImg - 3](https://github.com/user-attachments/assets/2f5f23fb-1086-412f-82a1-f1ff5e24dd75)
 ![Labeling image using labelImg - 4](https://github.com/user-attachments/assets/8bccf20e-d5dc-4d1b-923b-7f603d64f5d2)
 
+### Step 2: Model Training
+```bash
+yolo task=detect mode=train epochs=100 data=data_custom.yaml model=yolov8m.pt imgsz=640
+```
 **Training Configuration:**
 - Base Model: YOLOv8 Medium (yolov8m.pt)
 - Epochs: 100
