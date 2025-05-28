@@ -285,15 +285,46 @@ door-window-detection/
 - Model performance on validation set
 - Convergence after 100 epochs
 
+#### Confusion Matrix
+![confusion_matrix](https://github.com/user-attachments/assets/f75fa379-66d9-4552-b68b-357c96970ffc)
+
+#### Confusion Matrix Normalized
+![confusion_matrix_normalized](https://github.com/user-attachments/assets/3fe6b1d6-7aa9-4a68-907f-7f3df99846dd)
+
+#### Confusion F1 Curve
+![F1_curve](https://github.com/user-attachments/assets/ec55acfc-88ca-4358-b901-81055a3dc85d)
+
+#### labels
+![labels](https://github.com/user-attachments/assets/5f291a1d-5c4f-427b-ab90-f95cf674d18b)
+
+#### P_curve
+![P_curve](https://github.com/user-attachments/assets/a659451c-8804-4985-b99a-9747df198183)
+
+#### PR_Curve
+![PR_curve](https://github.com/user-attachments/assets/59fcdca6-5e04-43b3-bd3a-0499fef27279)
+
+#### R Curve
+![R_curve](https://github.com/user-attachments/assets/1c57de54-c492-465f-a43f-536f87a91add)
+
+#### Results
+![results](https://github.com/user-attachments/assets/c2c2b540-0ea9-4c7d-8208-ade4f0e7c7de)
+
 ### API Responses
 - JSON detection data examples
+![JSON Response](https://github.com/user-attachments/assets/68c5f208-0f5a-4d4a-8f1a-1203d8a2f72f)
+
+  
 - Annotated image outputs
+![Image Response](https://github.com/user-attachments/assets/1edc83e8-1f4e-4c62-b8fc-78b3c0091e8c)
+
 - Performance benchmarks
 
 ### Interactive Documentation
 - Swagger UI at `/docs`
 - Parameter descriptions
 - Live API testing interface
+![API Interface](https://github.com/user-attachments/assets/0ea0ada7-b072-4586-b26b-e6e7f2d9b333)
+
 
 ## 🤝 Contributing
 
